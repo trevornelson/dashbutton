@@ -1,0 +1,26 @@
+{
+  "plugins": {
+    "inert": {
+      "enable": true
+    },
+    "electrodeStaticPaths": {
+      "enable": true,
+      "options": {
+        "pathPrefix": "dist"
+      }
+    },
+    "webapp": {
+      "module": "./server/plugins/webapp",
+      "options": {
+        "pageTitle": "dashbutton",
+        "paths": {
+          "/{args*}": {
+            "content": {
+              "module": "./server/views/index-view"
+            }
+          }
+        }
+      }
+    }
+  }
+}

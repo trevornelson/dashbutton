@@ -1,0 +1,16 @@
+.container {
+  max-width: 800px;
+  margin: 0px auto;
+}
+
+.buttonSelected {
+  float: right;
+}
+
+.buttonUnselected {
+  margin: 100px auto;
+}
+
+.tabForms {
+  clear: both;
+}

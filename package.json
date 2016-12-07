@@ -1,0 +1,55 @@
+{
+  "name": "dashbutton",
+  "version": "0.0.1",
+  "description": "User interface for custom dashbuttons",
+  "homepage": "",
+  "author": {
+    "name": "Trevor Nelson",
+    "email": "trevor.nelson1@gmail.com",
+    "url": ""
+  },
+  "contributors": [],
+  "files": [
+    "server",
+    "client",
+    "test"
+  ],
+  "main": "server/index.js",
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "trevornelson/dashbutton"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": "^4.x.x || ^6.x.x",
+    "npm": ">= 3.x.x"
+  },
+  "scripts": {
+    "start": "if test \"$NODE_ENV\" = \"production\"; then npm run prod; else gulp dev; fi",
+    "test": "gulp test",
+    "coverage": "gulp check",
+    "prod": "echo 'Starting standalone server in PROD mode'; node .",
+    "heroku-postbuild": "gulp build"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "electrode-archetype-react-app": "^1.0.0",
+    "electrode-confippet": "^1.0.0",
+    "electrode-redux-router-engine": "^1.2.2",
+    "electrode-server": "^1.0.0",
+    "electrode-static-paths": "^1.0.0",
+    "firebase": "^3.6.0",
+    "lodash": "^4.10.1",
+    "material-ui": "^0.16.1",
+    "react-tap-event-plugin": "^1.0.0",
+    "redux-form": "^6.2.0",
+    "redux-form-material-ui": "^4.1.0",
+    "redux-react-firebase": "^2.3.3",
+    "superagent": "^2.3.0"
+  },
+  "devDependencies": {
+    "electrode-archetype-react-app-dev": "^1.0.0",
+    "gulp": "^3.9.1"
+  }
+}
