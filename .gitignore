@@ -152,6 +152,5 @@ Temporary Items
 dist
 Procfile
 config/assets.json
-npm-shrinkwrap.json
 
 .isomorphic-loader-config.json
